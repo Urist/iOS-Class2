@@ -11,6 +11,22 @@
 
 @implementation People
 
+- (id) init
+{
+	self = [super init];
+	if (self != nil) {
+		peopleArray = [[NSMutableArray alloc] init];
+	}
+	return self;
+}
+
+- (void) dealloc
+{
+	[peopleArray release];
+	[super dealloc];
+}
+
+
 - (void)addPerson:(Person *)aPerson {
 	[peopleArray addObject:aPerson];
 }

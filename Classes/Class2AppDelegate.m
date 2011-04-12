@@ -7,6 +7,8 @@
 //
 
 #import "Class2AppDelegate.h"
+#import "People.h"
+#import "Person.h"
 
 @implementation Class2AppDelegate
 
@@ -22,6 +24,8 @@
     
     [window makeKeyAndVisible];
     
+	People *peopleManager = [[People alloc] init];
+	
     return YES;
 }
 
