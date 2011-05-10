@@ -61,10 +61,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				439D9EA41378FE85007A82CC /* Person.h */,
-				439D9EA51378FE85007A82CC /* Person.m */,
 				1D3623240D0F684500981E51 /* Class2AppDelegate.h */,
 				1D3623250D0F684500981E51 /* Class2AppDelegate.m */,
+				439D9EA41378FE85007A82CC /* Person.h */,
+				439D9EA51378FE85007A82CC /* Person.m */,
 				43081719134AEBD20008E0D9 /* People.h */,
 				4308171A134AEBD20008E0D9 /* People.m */,
 				430580C11378F60800D515F7 /* PeopleTableViewController.h */,

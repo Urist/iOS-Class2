@@ -12,6 +12,8 @@
 @interface Class2AppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
 	People *peopleManager;
+	
+	NSMutableData *dataStream;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

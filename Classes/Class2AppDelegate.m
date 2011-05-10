@@ -42,7 +42,30 @@
 	self.window.rootViewController = navController;
 	[self.window makeKeyAndVisible];
 	
+	NSURL *u = [NSURL URLWithString:@"http://www.smh.com.au/"];
+	NSURLRequest *r = [NSURLRequest requestWithURL:u];
+	
+	/*	This is bad because sendSynchronousRequest waits for the data to be returned
+	NSData *d = [NSURLConnection sendSynchronousRequest:r returningResponse:nil error:nil];
+	NSString *stringFromData = [[NSString alloc] initWithData:d encoding:NSUTF8StringEncoding];
+	
+	NSLog(@"response string:%@", stringFromData);
+	*/
+	
+	NSURLConnection *c = [[NSURLConnection alloc] initWithRequest:r delegate:self];
+	
+	dataStream = [[NSMutableData alloc] init];
+	
     return YES;
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+	NSLog(@"Recieved data!");
+	[dataStream appendData:data];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+	NSLog(@"Finished Loading!\n String follows\n%@", [[NSString alloc] initWithData:dataStream encoding:NSUTF8StringEncoding]);
 }
 
 
