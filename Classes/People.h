@@ -13,7 +13,7 @@
 	NSMutableArray *peopleArray;
 }
 
-- (NSArray *)getPeopleArray;
+- (NSArray *)peopleArray;
 
 - (void)addPerson:(Person *)aPerson;
 - (void)removePerson:(Person *)aPerson;

@@ -26,6 +26,9 @@
 	[super dealloc];
 }
 
+- (NSArray *)peopleArray{
+	return [NSArray arrayWithArray:peopleArray];
+}
 
 - (void)addPerson:(Person *)aPerson {
 	[peopleArray addObject:aPerson];
