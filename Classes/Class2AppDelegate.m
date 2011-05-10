@@ -9,6 +9,7 @@
 #import "Class2AppDelegate.h"
 #import "People.h"
 #import "Person.h"
+#import "PeopleTableViewController.h"
 
 @implementation Class2AppDelegate
 
@@ -22,9 +23,24 @@
     
     // Override point for customization after application launch.
     
-    [window makeKeyAndVisible];
-    
-	People *peopleManager = [[People alloc] init];
+	peopleManager = [[People alloc] init];
+	
+	for (int i = 0; i < 30; i++)
+	{
+		Person *p = [[[Person alloc] init] autorelease];
+		[peopleManager addPerson:p];
+		p.name = [NSString stringWithFormat:@"Person %d", i];
+	}
+	
+	NSLog(@"there are %d person(s) in peopleManager", [peopleManager numberOfPeople]);
+	
+	PeopleTableViewController *pTableViewController = [[PeopleTableViewController alloc] initWithNibName:@"PeopleTableViewController" bundle:nil];
+	pTableViewController.peopleManager = peopleManager;
+	
+	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:pTableViewController];
+	
+	self.window.rootViewController = navController;
+	[self.window makeKeyAndVisible];
 	
     return YES;
 }
@@ -79,6 +95,7 @@
 
 
 - (void)dealloc {
+	[peopleManager release];
     [window release];
     [super dealloc];
 }

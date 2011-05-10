@@ -6,7 +6,6 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
 #import <Foundation/Foundation.h>
 #import "Person.h"
 
@@ -18,8 +17,9 @@
 
 - (void)addPerson:(Person *)aPerson;
 - (void)removePerson:(Person *)aPerson;
-
 - (Person *)lastPerson;
+- (Person *)personAtIndex:(NSInteger)index;
+
 - (int)numberOfPeople;
 - (BOOL)isPersonInPeople:(Person *)aPerson;
 

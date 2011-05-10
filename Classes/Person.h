@@ -14,4 +14,7 @@
 	int age;
 }
 
+@property (retain) NSString *name;
+@property (assign) int age;
+
 @end

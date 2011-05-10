@@ -37,15 +37,19 @@
 
 
 - (Person *)lastPerson {
-	[peopleArray removeLastObject];
+	return [peopleArray lastObject];
+}
+
+- (Person *)personAtIndex:(NSInteger)index{
+	return [peopleArray objectAtIndex:index];
 }
 
 - (int)numberOfPeople {
-	[peopleArray count];
+	return [peopleArray count];
 }
 
 - (BOOL)isPersonInPeople:(Person *)aPerson{
-	[peopleArray containsObject:aPerson];
+	return [peopleArray containsObject:aPerson];
 }
 
 

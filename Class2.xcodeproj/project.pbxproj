@@ -13,10 +13,12 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		430580C41378F60800D515F7 /* PeopleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430580C21378F60800D515F7 /* PeopleTableViewController.m */; };
+		430580C91378F62800D515F7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430580C71378F62800D515F7 /* DetailViewController.m */; };
+		430581091378FC4300D515F7 /* PeopleTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 430581081378FC4300D515F7 /* PeopleTableViewController.xib */; };
+		4305810E1378FC5C00D515F7 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4305810D1378FC5C00D515F7 /* DetailViewController.xib */; };
 		4308171B134AEBD20008E0D9 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 4308171A134AEBD20008E0D9 /* People.m */; };
-		437ED62813387146009E7129 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 437ED62713387146009E7129 /* Person.m */; };
-		43F085F8135428E0002F90C4 /* PeopleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F085F6135428E0002F90C4 /* PeopleController.m */; };
-		43F085F9135428E0002F90C4 /* PeopleController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 43F085F7135428E0002F90C4 /* PeopleController.xib */; };
+		439D9EA61378FE85007A82CC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 439D9EA51378FE85007A82CC /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,13 +31,16 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Class2_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Class2_Prefix.pch; sourceTree = "<group>"; };
+		430580C11378F60800D515F7 /* PeopleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleTableViewController.h; sourceTree = "<group>"; };
+		430580C21378F60800D515F7 /* PeopleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleTableViewController.m; sourceTree = "<group>"; };
+		430580C61378F62800D515F7 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		430580C71378F62800D515F7 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		430581081378FC4300D515F7 /* PeopleTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.xib; path = PeopleTableViewController.xib; sourceTree = "<group>"; };
+		4305810D1378FC5C00D515F7 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		43081719134AEBD20008E0D9 /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
 		4308171A134AEBD20008E0D9 /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
-		437ED62613387146009E7129 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ../Person.h; sourceTree = "<group>"; };
-		437ED62713387146009E7129 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = ../Person.m; sourceTree = "<group>"; };
-		43F085F5135428E0002F90C4 /* PeopleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleController.h; sourceTree = "<group>"; };
-		43F085F6135428E0002F90C4 /* PeopleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleController.m; sourceTree = "<group>"; };
-		43F085F7135428E0002F90C4 /* PeopleController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.xib; path = PeopleController.xib; sourceTree = "<group>"; };
+		439D9EA41378FE85007A82CC /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		439D9EA51378FE85007A82CC /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Class2-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Class2-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,15 +61,18 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				439D9EA41378FE85007A82CC /* Person.h */,
+				439D9EA51378FE85007A82CC /* Person.m */,
 				1D3623240D0F684500981E51 /* Class2AppDelegate.h */,
 				1D3623250D0F684500981E51 /* Class2AppDelegate.m */,
-				437ED62613387146009E7129 /* Person.h */,
-				437ED62713387146009E7129 /* Person.m */,
 				43081719134AEBD20008E0D9 /* People.h */,
 				4308171A134AEBD20008E0D9 /* People.m */,
-				43F085F5135428E0002F90C4 /* PeopleController.h */,
-				43F085F6135428E0002F90C4 /* PeopleController.m */,
-				43F085F7135428E0002F90C4 /* PeopleController.xib */,
+				430580C11378F60800D515F7 /* PeopleTableViewController.h */,
+				430580C21378F60800D515F7 /* PeopleTableViewController.m */,
+				430581081378FC4300D515F7 /* PeopleTableViewController.xib */,
+				430580C61378F62800D515F7 /* DetailViewController.h */,
+				430580C71378F62800D515F7 /* DetailViewController.m */,
+				4305810D1378FC5C00D515F7 /* DetailViewController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -167,6 +175,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				430581091378FC4300D515F7 /* PeopleTableViewController.xib in Resources */,
+				4305810E1378FC5C00D515F7 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,10 +189,10 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* Class2AppDelegate.m in Sources */,
-				437ED62813387146009E7129 /* Person.m in Sources */,
 				4308171B134AEBD20008E0D9 /* People.m in Sources */,
-				43F085F8135428E0002F90C4 /* PeopleController.m in Sources */,
-				43F085F9135428E0002F90C4 /* PeopleController.xib in Sources */,
+				430580C41378F60800D515F7 /* PeopleTableViewController.m in Sources */,
+				430580C91378F62800D515F7 /* DetailViewController.m in Sources */,
+				439D9EA61378FE85007A82CC /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

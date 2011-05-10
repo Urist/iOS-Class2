@@ -1,16 +1,16 @@
 //
-//  PeopleController.m
+//  PeopleTableViewController.m
 //  Class2
 //
-//  Created by Joe on 12/04/11.
+//  Created by Joe on 10/05/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "PeopleController.h"
+#import "PeopleTableViewController.h"
+#import "DetailViewController.h"
 
-
-@implementation PeopleController
-
+@implementation PeopleTableViewController
+@synthesize peopleManager;
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -64,7 +64,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 4;
+    return [peopleManager numberOfPeople];
 }
 
 
@@ -79,6 +79,7 @@
     }
     
     // Configure the cell...
+	cell.textLabel.text = [peopleManager personAtIndex:indexPath.row].name;
     
     return cell;
 }
@@ -129,13 +130,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here. Create and push another view controller.
-	/*
-	 <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-	 [self.navigationController pushViewController:detailViewController animated:YES];
-	 [detailViewController release];
-	 */
+
+	DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+	detailViewController.myPerson = [peopleManager personAtIndex:indexPath.row];
+	// ...
+	// Pass the selected object to the new view controller.
+	[self.navigationController pushViewController:detailViewController animated:YES];
+	[detailViewController release];
 }
 
 

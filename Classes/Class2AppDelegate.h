@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "People.h"
 
 @interface Class2AppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
+	People *peopleManager;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
